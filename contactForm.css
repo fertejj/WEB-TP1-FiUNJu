@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e6f7ff; /* Fondo celeste para todo el cuerpo de la página */
+}
+div{
+    margin: 10px;
+    font-size: 1rem;
+}

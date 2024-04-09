@@ -1,4 +1,81 @@
-html {
+body {
     background-color: black;
     color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/bg-main.jpg');
+    background-size: cover;
+}
+
+.text-container{
+    height: 30vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-logo {
+    margin-right: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.3rem;
+}
+
+.nav-container{
+    background-color: black;
+}
+
+.main-container {
+    display: grid;
+    place-items: center;
+}
+
+.list-menu {
+    display: grid;
+    place-items: center;
+    background-color: midnightblue;
+    width: 100vw;
+}
+
+.contact-form-button{
+    background-color: blue;
+    padding: 1rem;
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+}
+
+.list-item{
+    margin: 1rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas de igual ancho */
+    grid-gap: 20px;
+    /* Espacio entre las tarjetas */
+}
+
+.card {
+    background-color: #ffffff;
+    color: black;
+    font-size: large;
+    border: 1px solid #ccc;
+    display: grid;
+    place-items: center;
+    border-radius: 15%;
+    aspect-ratio: 1 / 1;
 }

@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactForm.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form action="/index.html" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div>
+            <label for="tipo_documento">Tipo de Documento:</label>
+            <select id="tipo_documento" name="tipo_documento">
+                <option value="DNI">DNI</option>
+                <option value="LC">LC</option>
+                <option value="LE">LE</option>
+                <option value="CI">CI</option>
+            </select>
+        </div>
+        <div>
+            <label for="numero_documento">Número de Documento:</label>
+            <input type="text" id="numero_documento" name="numero_documento" required>
+        </div>
+        <div>
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+        <div>
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+                <option value="O">Otro</option>
+            </select>
+        </div>
+        <div>
+            <label for="estado_civil">Estado Civil:</label>
+            <select id="estado_civil" name="estado_civil">
+                <option value="soltero">Soltero/a</option>
+                <option value="casado">Casado/a</option>
+                <option value="divorciado">Divorciado/a</option>
+                <option value="viudo">Viudo/a</option>
+            </select>
+        </div>
+        <div>
+            <label for="cuit">N CUIT:</label>
+            <input type="text" id="cuit" name="cuit" required>
+        </div>
+        <div>
+            <label for="domicilio_real">Domicilio Real:</label>
+            <input type="text" id="domicilio_real" name="domicilio_real" required>
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div>
+            <label for="ocupacion">Ocupación:</label>
+            <input type="text" id="ocupacion" name="ocupacion" required>
+        </div>
+        <div>
+            <label for="matricula_profesional">Matrícula Profesional:</label>
+            <input type="text" id="matricula_profesional" name="matricula_profesional">
+        </div>
+        <div>
+            <label for="domicilio_laboral">Domicilio Laboral:</label>
+            <input type="text" id="domicilio_laboral" name="domicilio_laboral" required>
+        </div>
+        <div>
+            <label for="titulo1">Título 1:</label>
+            <input type="text" id="titulo1" name="titulo1">
+        </div>
+        <div>
+            <label for="titulo2">Título 2:</label>
+            <input type="text" id="titulo2" name="titulo2">
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
