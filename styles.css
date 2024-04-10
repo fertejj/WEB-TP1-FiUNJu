@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('assets/bg-main.jpg');
@@ -12,7 +13,12 @@ body {
     display: grid;
     align-items: center;
     justify-items: center;
-}
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra */}
 
 .header-container {
     display: flex;
@@ -31,7 +37,21 @@ ul {
     display: flex;
     gap: 1rem;
     margin-top: 1.3rem;
+    transition: ease-in ;
 }
+
+.list-navItem{
+    transition-duration: 0.4s; /* Duración de la transición */
+  cursor: pointer; /* Cambiar cursor al pasar */
+  padding: 3px;
+  
+}
+
+.list-navItem:hover {
+    background-color: blue; /* Cambio de color al pasar el ratón */
+    color: white; /* Cambio de color del texto al pasar el ratón */
+    padding: 3px;
+  }
 
 .nav-container{
     background-color: black;
@@ -55,6 +75,7 @@ ul {
     border: 1px solid black;
     color: white;
     text-decoration: none;
+    
 }
 
 .list-item{
@@ -76,6 +97,11 @@ ul {
     border: 1px solid #ccc;
     display: grid;
     place-items: center;
-    border-radius: 15%;
+    transition-duration: 300ms;
+    border-radius: 15px;
     aspect-ratio: 1 / 1;
+}
+
+.card:hover{
+    transform: scale(1.08)
 }
